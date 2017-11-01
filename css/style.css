@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+* {
+	box-sizing: border-box;
+	-webkit-transition: all .25s ease;
+	   -moz-transition: all .25s ease;
+	    -ms-transition: all .25s ease;
+	     -o-transition: all .25s ease;
+	        transition: all .25s ease;
+}
+
+html, body {
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+}
+
+.section {
+	padding: 120px;
+	text-align: center;
+}
+
+.section--bg {
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #fff;
+}
+
+.section--fullscreen {
+	height: 100vh;
+}
+
+.section--heading {
+	background-image: url(../img/hero-bg.jpg);
+}
+
+.container {
+	width: 900px;
+	margin: 0 auto;
+}
+
+.section__logo {
+	width: 67px;
+	height: 70px;
+	margin: 0 auto;
+}
+
+.section__logo {
+	display: block;
+}
+
+.section__title {
+	font-size: 34px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+
+.section__desc {
+	line-height: 2;
+	margin-bottom: 30px;
+}
+
+.section__desc--up {
+	text-transform: uppercase;
+}
+
+.section__title--lg {
+	font-size: 54px;
+}
+
+.section__content {
+	padding: 70px 170px 30px;
+}
+
+.section:not(:first-of-type) .section__content {
+	border: 2px solid #333;
+	border-top: 0;
+	position: relative;
+}
+
+.section:not(:first-of-type) .section__content:before,
+.section:not(:first-of-type) .section__content:after {
+	content: '';
+	display: inline-block;
+	width: 30%;
+	border-top: 2px solid #333;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.section:not(:first-of-type) .section__content:after {
+	content: '';
+	left: auto;
+	right: 0;
+	top: 0;
+}
+
+.section:not(:first-of-type) .section__title {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	-webkit-transform: translate(-50%, -100%);
+	   -moz-transform: translate(-50%, -100%);
+	    -ms-transform: translate(-50%, -100%);
+	     -o-transform: translate(-50%, -100%);
+	        transform: translate(-50%, -100%);
+	/* background: #fff; */
+	/* display: inline; */
+
+}
